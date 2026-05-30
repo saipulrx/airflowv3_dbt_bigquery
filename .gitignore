@@ -21,3 +21,6 @@ __pycache__/
 .claude/
 *.swp
 .DS_Store
+
+# logs airflow
+logs/
