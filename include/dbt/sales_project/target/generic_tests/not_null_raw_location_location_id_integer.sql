@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="location_id_integer", model=get_where_subquery(ref('raw_location'))) }}

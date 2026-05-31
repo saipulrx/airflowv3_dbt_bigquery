@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="is_never_purchased", model=get_where_subquery(ref('int_customer_metrics'))) }}

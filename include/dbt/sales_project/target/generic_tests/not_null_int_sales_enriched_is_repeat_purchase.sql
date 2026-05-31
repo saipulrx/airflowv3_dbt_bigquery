@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="is_repeat_purchase", model=get_where_subquery(ref('int_sales_enriched'))) }}

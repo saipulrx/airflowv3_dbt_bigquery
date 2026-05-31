@@ -1,0 +1,11 @@
+
+    
+    
+
+
+
+select product_id_integer
+from `dwh-bootcamp-bigquery`.`latihan_dwh_bq_dbt_seeds`.`raw_product`
+where product_id_integer is null
+
+

@@ -1,0 +1,1 @@
+{{ test_unique(column_name="time_id_integer", model=get_where_subquery(source('raw', 'raw_time'))) }}

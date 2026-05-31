@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="months_since_first_purchase", model=get_where_subquery(ref('mart_customer_cohort'))) }}

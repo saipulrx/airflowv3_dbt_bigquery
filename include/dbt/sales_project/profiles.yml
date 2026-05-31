@@ -1,0 +1,12 @@
+sales_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      threads: 300
+      database: dwh-bootcamp-bigquery
+      schema: latihan_dwh_bq_dbt
+      method: service-account
+      keyfile: /opt/airflow/include/dwh-bootcamp-bigquery-5fe6e6cc2d68.json
+      location: US
+      dataproc_batch: null

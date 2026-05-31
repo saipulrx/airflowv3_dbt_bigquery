@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="customer_order_sequence", model=get_where_subquery(ref('int_sales_enriched'))) }}

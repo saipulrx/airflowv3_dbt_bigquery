@@ -1,0 +1,1 @@
+{{ test_relationships(column_name="time_sk", field="time_sk", model=get_where_subquery(ref('fct_sales')), to=ref('dim_time')) }}

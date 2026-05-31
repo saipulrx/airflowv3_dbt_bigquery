@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="quarter", model=get_where_subquery(ref('dim_time')), values=["Q1","Q2","Q3","Q4"]) }}

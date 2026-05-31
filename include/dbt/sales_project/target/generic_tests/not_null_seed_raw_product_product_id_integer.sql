@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="product_id_integer", model=get_where_subquery(ref('seed_raw_product'))) }}

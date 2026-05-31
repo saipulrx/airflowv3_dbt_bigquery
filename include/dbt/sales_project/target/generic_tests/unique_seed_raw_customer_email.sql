@@ -1,0 +1,1 @@
+{{ test_unique(column_name="email", model=get_where_subquery(ref('seed_raw_customer'))) }}

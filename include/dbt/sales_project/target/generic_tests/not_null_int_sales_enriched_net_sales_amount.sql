@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="net_sales_amount", model=get_where_subquery(ref('int_sales_enriched'))) }}

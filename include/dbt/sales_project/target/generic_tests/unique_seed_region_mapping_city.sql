@@ -1,0 +1,1 @@
+{{ test_unique(column_name="city", model=get_where_subquery(ref('seed_region_mapping'))) }}

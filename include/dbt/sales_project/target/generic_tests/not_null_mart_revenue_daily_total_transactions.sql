@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="total_transactions", model=get_where_subquery(ref('mart_revenue_daily'))) }}

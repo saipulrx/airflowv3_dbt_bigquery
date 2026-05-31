@@ -1,0 +1,1700 @@
+==================== 2026-05-24T10:00:17.145503Z | 65c93ec4-d31b-4dd9-b364-9614bc9fa3e4 ====================
+10:00:17.145708 [info ]: Starting dbt LSP server
+10:00:17.145789 [info ]: Connecting to LSP client on port 8000
+10:00:17.146552 [info ]: Successfully connected to LSP client
+10:00:17.146563 [info ]: Creating LSP service...
+10:00:17.193113 [info ]: Creating LSP server...
+10:00:17.193125 [info ]: Starting LSP server...
+10:00:17.207013 [info ]: Started loading project
+10:00:17.213890 [info ]: Finished loading project [  0.01s]
+10:38:52.974398 [info ]: Started loading project
+10:38:52.987593 [info ]: Finished loading project [  0.01s]
+11:16:04.757215 [info ]: Started loading project
+11:16:05.006080 [info ]: Started parsing
+11:16:05.051232 [info ]: Finished loading project [  0.29s]
+11:16:05.085554 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/schema.yml:32:23
+11:16:05.086083 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/schema.yml:36:23
+11:16:05.088364 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/schema.yml:18:23
+11:16:05.090740 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/schema.yml:52:23
+11:16:05.093020 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/schema.yml:87:22
+11:16:05.094085 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/schema.yml:99:22
+11:16:05.094958 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/schema.yml:81:22
+11:16:05.096775 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/core/schema.yml:93:22
+11:16:05.293421 [info ]: Finished parsing [  0.29s]
+11:16:05.294957 [info ]: Cached model count updated: 15 models (estimate)
+11:16:05.294968 [info ]: Cached model count updated: 15 models (accurate)
+11:16:05.295158 [info ]: Started scheduling
+11:16:05.295631 [info ]: Finished scheduling [  0.00s]
+11:16:07.689143 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:07.689338 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:07.689390 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:07.689432 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:07.689521 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:07.893965 [info ]: Started building task graph
+11:16:07.894462 [info ]: Finished building task graph [  0.00s]
+11:16:07.894839 [info ]: Started rendering (22 nodes)
+11:16:07.894898 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:16:07.894947 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:16:07.894974 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:16:07.894981 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:16:07.894988 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:16:07.894993 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:16:07.894999 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:16:07.895004 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:16:07.895012 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_time
+11:16:07.895017 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_time
+11:16:07.895023 [info ]: Started seed workshop_dwh_bq_dbt_seeds.seed_time
+11:16:07.895027 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.seed_time
+11:16:07.895033 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+11:16:07.895037 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+11:16:07.895044 [info ]: Started seed workshop_dwh_bq_dbt_seeds.seed_product_category
+11:16:07.895048 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.seed_product_category
+11:16:07.895055 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+11:16:07.895060 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+11:16:07.895068 [info ]: Started seed workshop_dwh_bq_dbt_seeds.seed_raw_product
+11:16:07.895072 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.seed_raw_product
+11:16:07.895079 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+11:16:07.895084 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+11:16:07.895090 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+11:16:07.895094 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+11:16:07.895100 [info ]: Started seed workshop_dwh_bq_dbt_seeds.seed_raw_location
+11:16:07.895104 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.seed_raw_location
+11:16:07.895109 [info ]: Started seed workshop_dwh_bq_dbt_seeds.seed_region_mapping
+11:16:07.895113 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.seed_region_mapping
+11:16:07.895119 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+11:16:07.895123 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+11:16:07.895129 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_sales
+11:16:07.895156 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_sales
+11:16:07.895165 [info ]: Started seed workshop_dwh_bq_dbt_seeds.seed_raw_sales
+11:16:07.895197 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.seed_raw_sales
+11:16:07.895231 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_customer
+11:16:07.895237 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_customer
+11:16:07.895244 [info ]: Started seed workshop_dwh_bq_dbt_seeds.seed_raw_customer
+11:16:07.895248 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.seed_raw_customer
+11:16:07.903801 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_product (view)
+11:16:07.903839 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_product [success]
+11:16:07.903868 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_sales (view)
+11:16:07.903879 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_sales [success]
+11:16:07.903894 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_time (view)
+11:16:07.903901 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_time [success]
+11:16:07.903909 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+11:16:07.903916 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+11:16:07.903931 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+11:16:07.903940 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+11:16:07.903952 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:16:07.903959 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:16:07.903967 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:16:07.903972 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:16:07.911066 [info ]:  Succeeded [  0.02s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:16:07.911091 [debug]: Finished rendering [  0.02s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:16:07.911637 [info ]:  Succeeded [  0.02s] model workshop_dwh_bq_dbt_marts.dim_location (table)
+11:16:07.911652 [debug]: Finished rendering [  0.02s] model workshop_dwh_bq_dbt_marts.dim_location [success]
+11:16:07.911688 [info ]:  Succeeded [  0.02s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:16:07.911700 [debug]: Finished rendering [  0.02s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:16:07.911763 [info ]:  Succeeded [  0.02s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:16:07.911773 [debug]: Finished rendering [  0.02s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:16:07.912722 [info ]:  Succeeded [  0.02s] model workshop_dwh_bq_dbt_staging.stg_customer (view)
+11:16:07.912736 [debug]: Finished rendering [  0.02s] model workshop_dwh_bq_dbt_staging.stg_customer [success]
+11:16:07.917528 [info ]:  Succeeded [  0.02s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+11:16:07.917551 [debug]: Finished rendering [  0.02s] model workshop_dwh_bq_dbt_staging.stg_location [success]
+11:16:07.917969 [info ]:  Succeeded [  0.02s] model workshop_dwh_bq_dbt_marts.dim_product (table)
+11:16:07.917987 [debug]: Finished rendering [  0.02s] model workshop_dwh_bq_dbt_marts.dim_product [success]
+11:16:07.918880 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+11:16:07.918897 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_customer [success]
+11:16:07.918909 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:16:07.918916 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:16:07.925537 [debug]: Finished rendering [  0.03s] seed workshop_dwh_bq_dbt_seeds.seed_product_category [success]
+11:16:07.925574 [info ]: Started analyzing (8 nodes)
+11:16:07.925583 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.seed_product_category
+11:16:07.925605 [debug]: Finished rendering [  0.03s] seed workshop_dwh_bq_dbt_seeds.seed_raw_product [success]
+11:16:07.925614 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.seed_raw_product
+11:16:07.925623 [debug]: Finished rendering [  0.03s] seed workshop_dwh_bq_dbt_seeds.seed_region_mapping [success]
+11:16:07.925633 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.seed_region_mapping
+11:16:07.925639 [debug]: Finished rendering [  0.03s] seed workshop_dwh_bq_dbt_seeds.seed_raw_location [success]
+11:16:07.925646 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.seed_raw_location
+11:16:07.925694 [debug]: Finished rendering [  0.03s] seed workshop_dwh_bq_dbt_seeds.seed_raw_customer [success]
+11:16:07.925711 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.seed_raw_customer
+11:16:07.925733 [info ]:  Succeeded [  0.03s] seed  workshop_dwh_bq_dbt_seeds.seed_region_mapping (table)
+11:16:07.925745 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.seed_region_mapping [success]
+11:16:07.925752 [info ]:  Succeeded [  0.03s] seed  workshop_dwh_bq_dbt_seeds.seed_raw_location (table)
+11:16:07.925760 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.seed_raw_location [success]
+11:16:07.925766 [info ]:  Succeeded [  0.03s] seed  workshop_dwh_bq_dbt_seeds.seed_product_category (table)
+11:16:07.925773 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.seed_product_category [success]
+11:16:07.925791 [info ]:  Succeeded [  0.03s] seed  workshop_dwh_bq_dbt_seeds.seed_raw_product (table)
+11:16:07.925804 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.seed_raw_product [success]
+11:16:07.925815 [info ]:  Succeeded [  0.03s] seed  workshop_dwh_bq_dbt_seeds.seed_raw_customer (table)
+11:16:07.925830 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.seed_raw_customer [success]
+11:16:07.925878 [debug]: Finished rendering [  0.03s] seed workshop_dwh_bq_dbt_seeds.seed_raw_sales [success]
+11:16:07.925894 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.seed_raw_sales
+11:16:07.925906 [info ]:  Succeeded [  0.03s] seed  workshop_dwh_bq_dbt_seeds.seed_raw_sales (table)
+11:16:07.925916 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.seed_raw_sales [success]
+11:16:07.926190 [debug]: Finished rendering [  0.03s] seed workshop_dwh_bq_dbt_seeds.seed_time [success]
+11:16:07.926203 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.seed_time
+11:16:07.926214 [info ]:  Succeeded [  0.03s] seed  workshop_dwh_bq_dbt_seeds.seed_time (table)
+11:16:07.926221 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.seed_time [success]
+11:16:07.926230 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_time
+11:16:07.926235 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_time
+11:16:07.927881 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_time [success]
+11:16:07.927895 [info ]: Finished rendering [  0.03s] (22 nodes, 0 skipped, 0 errors)
+11:16:07.927907 [debug]: Started analyzing model workshop_dwh_bq_dbt_marts.dim_time
+11:16:07.959388 [info ]:  Succeeded [  0.03s] model workshop_dwh_bq_dbt_marts.dim_time (table)
+11:16:07.959414 [debug]: Finished analyzing [  0.03s] model workshop_dwh_bq_dbt_marts.dim_time [success]
+11:16:07.959419 [info ]: Finished analyzing [  0.03s] (8 nodes, 0 skipped, 0 errors)
+11:16:07.963176 [info ]: Cached model count updated: 15 models (accurate)
+11:16:23.019788 [info ]: Started loading project
+11:16:23.039194 [info ]: Started parsing
+11:16:23.055516 [info ]: Finished loading project [  0.04s]
+11:16:23.266227 [info ]: Finished parsing [  0.23s]
+11:16:23.269321 [info ]: Cached model count updated: 15 models (estimate)
+11:16:23.269335 [info ]: Cached model count updated: 15 models (accurate)
+11:16:23.269446 [info ]: Started scheduling
+11:16:23.269632 [info ]: Finished scheduling [  0.00s]
+11:16:23.269646 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+11:16:23.269650 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+11:16:23.270589 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:23.270605 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:23.270614 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:23.270619 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:23.270630 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:16:23.441308 [info ]: Started building task graph
+11:16:23.441455 [info ]: Finished building task graph [  0.00s]
+11:16:23.441562 [debug]: Incremental compilation - 0 nodes selected: {}
+11:16:23.444298 [info ]: Cached model count updated: 15 models (accurate)
+11:37:02.304341 [info ]: Started loading project
+11:37:02.314962 [info ]: Started loading project
+11:37:02.315798 [info ]: Finished loading project [  0.01s]
+11:37:02.620829 [info ]: Started parsing
+11:37:02.672776 [info ]: Finished loading project [  0.36s]
+11:37:03.071851 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_customer.sql:14:19
+11:37:03.071877 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:37:03.071891 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:37:03.071904 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:37:03.071947 [error]: dbt1005: Ref 'seed_raw_customer' not found in project. Searched for 'sales_project.seed_raw_customer, seed_raw_customer'
+  --> models/staging/stg_customer.sql:6:19
+11:37:03.071963 [error]: dbt1005: Ref 'seed_raw_location' not found in project. Searched for 'sales_project.seed_raw_location, seed_raw_location'
+  --> models/staging/stg_location.sql:6:19
+11:37:03.071973 [error]: dbt1005: Ref 'seed_raw_product' not found in project. Searched for 'sales_project.seed_raw_product, seed_raw_product'
+  --> models/staging/stg_product.sql:6:19
+11:37:03.071984 [error]: dbt1005: Ref 'seed_raw_sales' not found in project. Searched for 'sales_project.seed_raw_sales, seed_raw_sales'
+  --> models/staging/stg_sales.sql:6:19
+11:37:03.071995 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/staging/stg_time.sql:8:19
+11:37:03.073509 [info ]: Cached model count updated: 15 models (estimate)
+11:37:03.073520 [info ]: Cached model count updated: 15 models (accurate)
+11:37:03.073596 [info ]: Started scheduling
+11:37:03.073865 [info ]: Finished scheduling [  0.00s]
+11:37:03.074732 [info ]: Finished parsing [  0.45s]
+11:37:03.291156 [info ]: Started loading project
+11:37:03.299618 [info ]: Started loading project
+11:37:03.300883 [info ]: Finished loading project [  0.01s]
+11:37:03.541663 [info ]: Started parsing
+11:37:03.585567 [info ]: Finished loading project [  0.29s]
+11:37:03.648816 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_customer.sql:14:19
+11:37:03.648837 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:37:03.648847 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:37:03.648856 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:37:03.648888 [error]: dbt1005: Ref 'seed_raw_customer' not found in project. Searched for 'sales_project.seed_raw_customer, seed_raw_customer'
+  --> models/staging/stg_customer.sql:6:19
+11:37:03.648899 [error]: dbt1005: Ref 'seed_raw_location' not found in project. Searched for 'sales_project.seed_raw_location, seed_raw_location'
+  --> models/staging/stg_location.sql:6:19
+11:37:03.648910 [error]: dbt1005: Ref 'seed_raw_product' not found in project. Searched for 'sales_project.seed_raw_product, seed_raw_product'
+  --> models/staging/stg_product.sql:6:19
+11:37:03.648924 [error]: dbt1005: Ref 'seed_raw_sales' not found in project. Searched for 'sales_project.seed_raw_sales, seed_raw_sales'
+  --> models/staging/stg_sales.sql:6:19
+11:37:03.648937 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/staging/stg_time.sql:8:19
+11:37:03.649958 [info ]: Cached model count updated: 15 models (estimate)
+11:37:03.649966 [info ]: Cached model count updated: 15 models (accurate)
+11:37:03.650036 [info ]: Started scheduling
+11:37:03.650275 [info ]: Finished scheduling [  0.00s]
+11:37:03.651043 [info ]: Finished parsing [  0.11s]
+11:37:05.190490 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:37:05.190611 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:37:05.190682 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:37:05.190735 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:37:05.190803 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:37:05.395200 [info ]: Started building task graph
+11:37:05.395403 [info ]: Finished building task graph [  0.00s]
+11:37:05.395517 [info ]: Started rendering (22 nodes)
+11:37:05.395527 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:37:05.395534 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:37:05.395554 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_product
+11:37:05.395559 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_product
+11:37:05.395567 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_location
+11:37:05.395574 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_location
+11:37:05.395584 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:37:05.395588 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:37:05.395594 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:37:05.395665 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:37:05.395687 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:37:05.395693 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:37:05.395700 [info ]: Started seed workshop_dwh_bq_dbt_seeds.calendar
+11:37:05.395706 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.calendar
+11:37:05.395715 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:37:05.395722 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:37:05.395732 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:37:05.395737 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:37:05.395746 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:37:05.395751 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:37:05.395759 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:37:05.395764 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:37:05.395771 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_time
+11:37:05.395777 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_time
+11:37:05.395784 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_time
+11:37:05.395789 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_time
+11:37:05.395798 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+11:37:05.395804 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+11:37:05.395813 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+11:37:05.395818 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+11:37:05.395825 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+11:37:05.395830 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+11:37:05.395837 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+11:37:05.395841 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+11:37:05.395847 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+11:37:05.395852 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+11:37:05.395859 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_sales
+11:37:05.395864 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_sales
+11:37:05.395870 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_customer
+11:37:05.395876 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_customer
+11:37:05.397052 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_time (view)
+11:37:05.397102 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_time [error]
+11:37:05.397149 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_time, version: None
+(in models/staging/stg_time.sql:8:19)
+  --> models/staging/stg_time.sql:8:19
+11:37:05.397169 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+11:37:05.397189 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location [error]
+11:37:05.397203 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_raw_location, version: None
+(in models/staging/stg_location.sql:6:19)
+  --> models/staging/stg_location.sql:6:19
+11:37:05.397211 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales (view)
+11:37:05.397219 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales [error]
+11:37:05.397228 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_raw_sales, version: None
+(in models/staging/stg_sales.sql:6:19)
+  --> models/staging/stg_sales.sql:6:19
+11:37:05.397234 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer (view)
+11:37:05.397243 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer [error]
+11:37:05.397251 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_raw_customer, version: None
+(in models/staging/stg_customer.sql:6:19)
+  --> models/staging/stg_customer.sql:6:19
+11:37:05.397258 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product (view)
+11:37:05.397265 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product [error]
+11:37:05.397273 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_raw_product, version: None
+(in models/staging/stg_product.sql:6:19)
+  --> models/staging/stg_product.sql:6:19
+11:37:05.397279 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product (table)
+11:37:05.397290 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product [error]
+11:37:05.397297 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_product_category, version: None
+(in models/marts/core/dim_product.sql:10:19)
+  --> models/marts/core/dim_product.sql:10:19
+11:37:05.397304 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_time [error]
+11:37:05.397317 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_time, version: None
+(in models/marts/core/dim_time.sql:9:19)
+  --> models/marts/core/dim_time.sql:9:19
+11:37:05.397339 [info ]: Started analyzing (8 nodes)
+11:37:05.397344 [debug]: Started analyzing model workshop_dwh_bq_dbt_marts.dim_time
+11:37:05.397353 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_marts.dim_time (table)
+11:37:05.397363 [debug]: Finished analyzing [  0.00s] model workshop_dwh_bq_dbt_marts.dim_time [skipped]
+11:37:05.397369 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location (table)
+11:37:05.397378 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location [error]
+11:37:05.397391 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_region_mapping, version: None
+(in models/marts/core/dim_location.sql:10:19)
+  --> models/marts/core/dim_location.sql:10:19
+11:37:05.407007 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:37:05.407034 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_location
+11:37:05.407054 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_location (table)
+11:37:05.407066 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:37:05.407075 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+11:37:05.407083 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:37:05.407091 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:37:05.407096 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_product
+11:37:05.407104 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.lookup_product_category (table)
+11:37:05.407113 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+11:37:05.407118 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_product (table)
+11:37:05.407124 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:37:05.407207 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+11:37:05.407219 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:37:05.407232 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_sales (table)
+11:37:05.407241 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+11:37:05.410340 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.calendar [success]
+11:37:05.410352 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.calendar
+11:37:05.410362 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.calendar (table)
+11:37:05.410370 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.calendar [success]
+11:37:05.419388 [info ]:  Succeeded [  0.02s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:37:05.419403 [debug]: Finished rendering [  0.02s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:37:05.419414 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:37:05.419423 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:37:05.419457 [info ]:  Succeeded [  0.02s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:37:05.419467 [debug]: Finished rendering [  0.02s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:37:05.419575 [debug]: Finished rendering [  0.02s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:37:05.419588 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:37:05.419598 [info ]:  Succeeded [  0.02s] seed  workshop_dwh_bq_dbt_seeds.lookup_region_mapping (table)
+11:37:05.419605 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:37:05.419783 [debug]: Finished rendering [  0.02s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+11:37:05.419793 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:37:05.419803 [info ]:  Succeeded [  0.02s] seed  workshop_dwh_bq_dbt_seeds.raw_customer (table)
+11:37:05.419810 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+11:37:05.419814 [info ]: Finished analyzing [  0.02s] (8 nodes, 1 skipped, 0 errors)
+11:37:05.421964 [info ]:  Succeeded [  0.03s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:37:05.421984 [debug]: Finished rendering [  0.03s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:37:05.422065 [info ]:  Succeeded [  0.03s] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+11:37:05.422076 [debug]: Finished rendering [  0.03s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+11:37:05.422089 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+11:37:05.422099 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+11:37:05.422489 [info ]:  Succeeded [  0.03s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:37:05.422503 [debug]: Finished rendering [  0.03s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:37:05.422766 [info ]:     Failed [-------] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+11:37:05.422776 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_customer [error]
+11:37:05.422794 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_region_mapping, version: None
+(in models/marts/core/dim_customer.sql:14:19)
+  --> models/marts/core/dim_customer.sql:14:19
+11:37:05.430249 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:37:05.430273 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:37:05.430278 [info ]: Finished rendering [  0.03s] (22 nodes, 0 skipped, 9 errors)
+11:37:05.434230 [info ]: Cached model count updated: 15 models (accurate)
+11:38:19.461917 [info ]: Started loading project
+11:38:19.474147 [info ]: Started parsing
+11:38:19.490397 [info ]: Finished loading project [  0.03s]
+11:38:19.557326 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_customer.sql:14:19
+11:38:19.557372 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:38:19.557382 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:38:19.557400 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:38:19.557467 [error]: dbt1005: Ref 'seed_raw_customer' not found in project. Searched for 'sales_project.seed_raw_customer, seed_raw_customer'
+  --> models/staging/stg_customer.sql:6:19
+11:38:19.557485 [error]: dbt1005: Ref 'seed_raw_location' not found in project. Searched for 'sales_project.seed_raw_location, seed_raw_location'
+  --> models/staging/stg_location.sql:6:19
+11:38:19.557494 [error]: dbt1005: Ref 'seed_raw_product' not found in project. Searched for 'sales_project.seed_raw_product, seed_raw_product'
+  --> models/staging/stg_product.sql:6:19
+11:38:19.557506 [error]: dbt1005: Ref 'seed_raw_sales' not found in project. Searched for 'sales_project.seed_raw_sales, seed_raw_sales'
+  --> models/staging/stg_sales.sql:6:19
+11:38:19.557522 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/staging/stg_time.sql:8:19
+11:38:19.560173 [info ]: Cached model count updated: 15 models (estimate)
+11:38:19.560184 [info ]: Cached model count updated: 15 models (accurate)
+11:38:19.560260 [info ]: Started scheduling
+11:38:19.560393 [info ]: Finished scheduling [  0.00s]
+11:38:19.560405 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+11:38:19.560408 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+11:38:19.561087 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:19.561097 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:19.561104 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:19.561113 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:19.561116 [info ]: Finished parsing [  0.09s]
+11:38:19.561121 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:19.733892 [info ]: Started building task graph
+11:38:19.733974 [info ]: Finished building task graph [  0.00s]
+11:38:19.734058 [debug]: Incremental compilation - 0 nodes selected: {}
+11:38:19.736862 [info ]: Cached model count updated: 15 models (accurate)
+11:38:37.675933 [info ]: Started loading project
+11:38:37.681224 [info ]: Started loading project
+11:38:37.681722 [info ]: Finished loading project [  0.01s]
+11:38:37.973026 [info ]: Started parsing
+11:38:38.021029 [info ]: Finished loading project [  0.34s]
+11:38:38.105991 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_customer.sql:14:19
+11:38:38.106013 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:38:38.106022 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:38:38.106030 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:38:38.106062 [error]: dbt1005: Ref 'seed_raw_customer' not found in project. Searched for 'sales_project.seed_raw_customer, seed_raw_customer'
+  --> models/staging/stg_customer.sql:6:19
+11:38:38.106074 [error]: dbt1005: Ref 'seed_raw_location' not found in project. Searched for 'sales_project.seed_raw_location, seed_raw_location'
+  --> models/staging/stg_location.sql:6:19
+11:38:38.106082 [error]: dbt1005: Ref 'seed_raw_product' not found in project. Searched for 'sales_project.seed_raw_product, seed_raw_product'
+  --> models/staging/stg_product.sql:6:19
+11:38:38.106102 [error]: dbt1005: Ref 'seed_raw_sales' not found in project. Searched for 'sales_project.seed_raw_sales, seed_raw_sales'
+  --> models/staging/stg_sales.sql:6:19
+11:38:38.106121 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/staging/stg_time.sql:8:19
+11:38:38.107338 [info ]: Cached model count updated: 15 models (estimate)
+11:38:38.107348 [info ]: Cached model count updated: 15 models (accurate)
+11:38:38.107439 [info ]: Started scheduling
+11:38:38.107746 [info ]: Finished scheduling [  0.00s]
+11:38:38.108699 [info ]: Finished parsing [  0.14s]
+11:38:39.525089 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:39.525157 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:39.525201 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:39.525243 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:39.525287 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:39.712155 [info ]: Started building task graph
+11:38:39.712404 [info ]: Finished building task graph [  0.00s]
+11:38:39.712526 [info ]: Started rendering (22 nodes)
+11:38:39.712539 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:38:39.712548 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:38:39.712562 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_product
+11:38:39.712567 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_product
+11:38:39.712576 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_location
+11:38:39.712580 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_location
+11:38:39.712586 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:38:39.712590 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:38:39.712597 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:38:39.712602 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:38:39.712607 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:38:39.712610 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:38:39.712617 [info ]: Started seed workshop_dwh_bq_dbt_seeds.calendar
+11:38:39.712622 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.calendar
+11:38:39.712627 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:38:39.712631 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:38:39.712637 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:38:39.712640 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:38:39.712676 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:38:39.712694 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:38:39.712708 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:38:39.712716 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:38:39.712728 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_time
+11:38:39.712735 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_time
+11:38:39.712756 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_time
+11:38:39.712766 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_time
+11:38:39.712783 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+11:38:39.712791 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+11:38:39.712808 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+11:38:39.712817 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+11:38:39.712834 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+11:38:39.712842 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+11:38:39.712853 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+11:38:39.712860 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+11:38:39.712872 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+11:38:39.712880 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+11:38:39.712894 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_sales
+11:38:39.712902 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_sales
+11:38:39.712915 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_customer
+11:38:39.712924 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_customer
+11:38:39.714102 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_time (view)
+11:38:39.714137 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_time [error]
+11:38:39.714171 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_time, version: None
+(in models/staging/stg_time.sql:8:19)
+  --> models/staging/stg_time.sql:8:19
+11:38:39.714245 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_time [error]
+11:38:39.714271 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_time, version: None
+(in models/marts/core/dim_time.sql:9:19)
+  --> models/marts/core/dim_time.sql:9:19
+11:38:39.714295 [info ]: Started analyzing (8 nodes)
+11:38:39.714305 [debug]: Started analyzing model workshop_dwh_bq_dbt_marts.dim_time
+11:38:39.714319 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_marts.dim_time (table)
+11:38:39.714334 [debug]: Finished analyzing [  0.00s] model workshop_dwh_bq_dbt_marts.dim_time [skipped]
+11:38:39.714460 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location (table)
+11:38:39.714479 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location [error]
+11:38:39.714501 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_region_mapping, version: None
+(in models/marts/core/dim_location.sql:10:19)
+  --> models/marts/core/dim_location.sql:10:19
+11:38:39.714701 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product (view)
+11:38:39.714724 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product [error]
+11:38:39.714747 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_raw_product, version: None
+(in models/staging/stg_product.sql:6:19)
+  --> models/staging/stg_product.sql:6:19
+11:38:39.714767 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product (table)
+11:38:39.714783 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product [error]
+11:38:39.714799 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_product_category, version: None
+(in models/marts/core/dim_product.sql:10:19)
+  --> models/marts/core/dim_product.sql:10:19
+11:38:39.714857 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+11:38:39.714887 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location [error]
+11:38:39.714909 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_raw_location, version: None
+(in models/staging/stg_location.sql:6:19)
+  --> models/staging/stg_location.sql:6:19
+11:38:39.714930 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales (view)
+11:38:39.714948 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales [error]
+11:38:39.714972 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_raw_sales, version: None
+(in models/staging/stg_sales.sql:6:19)
+  --> models/staging/stg_sales.sql:6:19
+11:38:39.715003 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer (view)
+11:38:39.715016 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer [error]
+11:38:39.715031 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_raw_customer, version: None
+(in models/staging/stg_customer.sql:6:19)
+  --> models/staging/stg_customer.sql:6:19
+11:38:39.717332 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:38:39.717369 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:38:39.717390 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:38:39.717405 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:38:39.717425 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:38:39.717443 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:38:39.718420 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+11:38:39.718450 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+11:38:39.718476 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+11:38:39.718488 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+11:38:39.718501 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:38:39.718509 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:38:39.718518 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:38:39.718522 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:38:39.719947 [info ]:     Failed [  0.00s] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+11:38:39.719969 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_customer [error]
+11:38:39.719988 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_region_mapping, version: None
+(in models/marts/core/dim_customer.sql:14:19)
+  --> models/marts/core/dim_customer.sql:14:19
+11:38:39.720992 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+11:38:39.721033 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:38:39.721064 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.lookup_product_category (table)
+11:38:39.721099 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+11:38:39.721230 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:38:39.721244 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:38:39.721257 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.lookup_region_mapping (table)
+11:38:39.721267 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:38:39.721321 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:38:39.721334 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_product
+11:38:39.721346 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_product (table)
+11:38:39.721355 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:38:39.721473 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+11:38:39.721485 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:38:39.721496 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_sales (table)
+11:38:39.721506 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+11:38:39.721811 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+11:38:39.721821 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:38:39.721832 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_customer (table)
+11:38:39.721841 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+11:38:39.721971 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:38:39.721983 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_location
+11:38:39.721995 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_location (table)
+11:38:39.722005 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:38:39.722870 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.calendar [success]
+11:38:39.722883 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.calendar
+11:38:39.722896 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.calendar (table)
+11:38:39.722906 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.calendar [success]
+11:38:39.722910 [info ]: Finished analyzing [  0.01s] (8 nodes, 1 skipped, 0 errors)
+11:38:39.724834 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:38:39.724858 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:38:39.724864 [info ]: Finished rendering [  0.01s] (22 nodes, 0 skipped, 9 errors)
+11:38:39.729270 [info ]: Cached model count updated: 15 models (accurate)
+11:38:45.231856 [info ]: Started loading project
+11:38:45.238336 [info ]: Started parsing
+11:38:45.251437 [info ]: Finished loading project [  0.02s]
+11:38:45.300359 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_customer.sql:14:19
+11:38:45.300383 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:38:45.300396 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:38:45.300409 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:38:45.300477 [error]: dbt1005: Ref 'seed_raw_customer' not found in project. Searched for 'sales_project.seed_raw_customer, seed_raw_customer'
+  --> models/staging/stg_customer.sql:6:19
+11:38:45.300491 [error]: dbt1005: Ref 'seed_raw_location' not found in project. Searched for 'sales_project.seed_raw_location, seed_raw_location'
+  --> models/staging/stg_location.sql:6:19
+11:38:45.300502 [error]: dbt1005: Ref 'seed_raw_product' not found in project. Searched for 'sales_project.seed_raw_product, seed_raw_product'
+  --> models/staging/stg_product.sql:6:19
+11:38:45.300521 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/staging/stg_time.sql:8:19
+11:38:45.302699 [info ]: Cached model count updated: 15 models (estimate)
+11:38:45.302709 [info ]: Cached model count updated: 15 models (accurate)
+11:38:45.302806 [info ]: Started scheduling
+11:38:45.303482 [info ]: Finished scheduling [  0.00s]
+11:38:45.304198 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:45.304214 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:45.304221 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:45.304225 [info ]: Finished parsing [  0.07s]
+11:38:45.304229 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:45.304239 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:46.581252 [info ]: Started building task graph
+11:38:46.581446 [info ]: Finished building task graph [  0.00s]
+11:38:46.581543 [info ]: Started rendering (9 nodes)
+11:38:46.581554 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:38:46.581563 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:38:46.581580 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:38:46.581587 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:38:46.581596 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:38:46.581603 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:38:46.581610 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:38:46.581615 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:38:46.581622 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+11:38:46.581627 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+11:38:46.581633 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_sales
+11:38:46.581638 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_sales
+11:38:46.581647 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:38:46.581651 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:38:46.582570 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:38:46.582588 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:38:46.582599 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:38:46.582607 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:38:46.582615 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+11:38:46.582622 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+11:38:46.582633 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+11:38:46.582641 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+11:38:46.582652 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:38:46.582663 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:38:46.582671 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:38:46.582676 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:38:46.582686 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:38:46.582694 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:38:46.583131 [info ]:     Failed [-------] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+11:38:46.583146 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_customer [error]
+11:38:46.583169 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_region_mapping, version: None
+(in models/marts/core/dim_customer.sql:14:19)
+  --> models/marts/core/dim_customer.sql:14:19
+11:38:46.583260 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:38:46.583270 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:38:46.585010 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+11:38:46.585035 [info ]: Started analyzing (1 nodes)
+11:38:46.585042 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:38:46.585059 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_sales (table)
+11:38:46.585072 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+11:38:46.585075 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+11:38:46.588856 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_sales (view)
+11:38:46.588888 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_sales [success]
+11:38:46.588894 [info ]: Finished rendering [  0.01s] (9 nodes, 0 skipped, 1 errors)
+11:38:46.588983 [debug]: Incremental compilation - 9 nodes selected: {"model.sales_project.dim_customer", "model.sales_project.fct_sales", "model.sales_project.int_customer_metrics", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_sales", "seed.sales_project.raw_sales"}
+11:38:46.593358 [info ]: Cached model count updated: 15 models (accurate)
+11:38:52.708381 [info ]: Started loading project
+11:38:52.714908 [info ]: Started parsing
+11:38:52.727087 [info ]: Finished loading project [  0.02s]
+11:38:52.922761 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_customer.sql:14:19
+11:38:52.922784 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:38:52.922794 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:38:52.922802 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:38:52.922860 [error]: dbt1005: Ref 'seed_raw_location' not found in project. Searched for 'sales_project.seed_raw_location, seed_raw_location'
+  --> models/staging/stg_location.sql:6:19
+11:38:52.922870 [error]: dbt1005: Ref 'seed_raw_product' not found in project. Searched for 'sales_project.seed_raw_product, seed_raw_product'
+  --> models/staging/stg_product.sql:6:19
+11:38:52.922882 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/staging/stg_time.sql:8:19
+11:38:52.925666 [info ]: Cached model count updated: 15 models (estimate)
+11:38:52.925675 [info ]: Cached model count updated: 15 models (accurate)
+11:38:52.925755 [info ]: Started scheduling
+11:38:52.926319 [info ]: Finished scheduling [  0.00s]
+11:38:52.926804 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:52.926814 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:52.926821 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:52.926822 [info ]: Finished parsing [  0.21s]
+11:38:52.926836 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:52.926842 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:53.632129 [info ]: Started building task graph
+11:38:53.632302 [info ]: Finished building task graph [  0.00s]
+11:38:53.632394 [info ]: Started rendering (9 nodes)
+11:38:53.632403 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:38:53.632411 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:38:53.632428 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:38:53.632433 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:38:53.632440 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:38:53.632444 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:38:53.632451 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:38:53.632456 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:38:53.632464 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+11:38:53.632469 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+11:38:53.632474 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_customer
+11:38:53.632478 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_customer
+11:38:53.632484 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:38:53.632488 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:38:53.633391 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:38:53.633410 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:38:53.633423 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:38:53.633431 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:38:53.633495 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:38:53.633510 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:38:53.633521 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:38:53.633529 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:38:53.633666 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:38:53.633678 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:38:53.633772 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+11:38:53.633786 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+11:38:53.633803 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+11:38:53.633811 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+11:38:53.634145 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:38:53.634158 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:38:53.634291 [info ]:     Failed [-------] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+11:38:53.634304 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_customer [error]
+11:38:53.634326 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_region_mapping, version: None
+(in models/marts/core/dim_customer.sql:14:19)
+  --> models/marts/core/dim_customer.sql:14:19
+11:38:53.635892 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+11:38:53.635908 [info ]: Started analyzing (1 nodes)
+11:38:53.635914 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:38:53.635930 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_customer (table)
+11:38:53.635938 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+11:38:53.635941 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+11:38:53.644820 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_customer (view)
+11:38:53.644839 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_customer [success]
+11:38:53.644844 [info ]: Finished rendering [  0.01s] (9 nodes, 0 skipped, 1 errors)
+11:38:53.644926 [debug]: Incremental compilation - 9 nodes selected: {"model.sales_project.dim_customer", "model.sales_project.fct_sales", "model.sales_project.int_customer_metrics", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_customer", "seed.sales_project.raw_customer"}
+11:38:53.648489 [info ]: Cached model count updated: 15 models (accurate)
+11:38:59.057792 [info ]: Started loading project
+11:38:59.079551 [info ]: Started parsing
+11:38:59.103004 [info ]: Finished loading project [  0.05s]
+11:38:59.187754 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_customer.sql:14:19
+11:38:59.187783 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:38:59.187793 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:38:59.187802 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:38:59.187879 [error]: dbt1005: Ref 'seed_raw_location' not found in project. Searched for 'sales_project.seed_raw_location, seed_raw_location'
+  --> models/staging/stg_location.sql:6:19
+11:38:59.187897 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/staging/stg_time.sql:8:19
+11:38:59.190447 [info ]: Cached model count updated: 15 models (estimate)
+11:38:59.190462 [info ]: Cached model count updated: 15 models (accurate)
+11:38:59.190581 [info ]: Started scheduling
+11:38:59.191246 [info ]: Finished scheduling [  0.00s]
+11:38:59.192070 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:59.192085 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:59.192091 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:59.192091 [info ]: Finished parsing [  0.11s]
+11:38:59.192100 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:59.192106 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:38:59.903089 [info ]: Started building task graph
+11:38:59.903251 [info ]: Finished building task graph [  0.00s]
+11:38:59.903339 [info ]: Started rendering (8 nodes)
+11:38:59.903348 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:38:59.903356 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:38:59.903372 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:38:59.903378 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:38:59.903386 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:38:59.903390 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:38:59.903402 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:38:59.903407 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:38:59.903416 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+11:38:59.903420 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+11:38:59.903426 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+11:38:59.903429 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+11:38:59.903436 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_product
+11:38:59.903440 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_product
+11:38:59.904291 [info ]:     Failed [-------] model workshop_dwh_bq_dbt_marts.dim_product (table)
+11:38:59.904309 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product [error]
+11:38:59.904329 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_product_category, version: None
+(in models/marts/core/dim_product.sql:10:19)
+  --> models/marts/core/dim_product.sql:10:19
+11:38:59.904342 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:38:59.904349 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:38:59.904459 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:38:59.904471 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:38:59.904481 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:38:59.904488 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:38:59.904497 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:38:59.904502 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:38:59.904597 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:38:59.904611 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:38:59.905117 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:38:59.905126 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:38:59.906622 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:38:59.906632 [info ]: Started analyzing (1 nodes)
+11:38:59.906636 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_product
+11:38:59.906647 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_product (table)
+11:38:59.906654 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:38:59.906657 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+11:38:59.917840 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_product (view)
+11:38:59.917862 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_product [success]
+11:38:59.917866 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 1 errors)
+11:38:59.917958 [debug]: Incremental compilation - 8 nodes selected: {"model.sales_project.dim_product", "model.sales_project.fct_sales", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_product", "seed.sales_project.raw_product"}
+11:38:59.921637 [info ]: Cached model count updated: 15 models (accurate)
+11:39:06.835049 [info ]: Started loading project
+11:39:06.850344 [info ]: Started parsing
+11:39:06.868471 [info ]: Finished loading project [  0.03s]
+11:39:06.950490 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_customer.sql:14:19
+11:39:06.950530 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:39:06.950543 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:39:06.950553 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:39:06.950676 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/staging/stg_time.sql:8:19
+11:39:06.953717 [info ]: Cached model count updated: 15 models (estimate)
+11:39:06.953740 [info ]: Cached model count updated: 15 models (accurate)
+11:39:06.953901 [info ]: Started scheduling
+11:39:06.954595 [info ]: Finished scheduling [  0.00s]
+11:39:06.955580 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:06.955606 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:06.955615 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:06.955616 [info ]: Finished parsing [  0.11s]
+11:39:06.955623 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:06.955633 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:07.134972 [info ]: Started building task graph
+11:39:07.135164 [info ]: Finished building task graph [  0.00s]
+11:39:07.135256 [info ]: Started rendering (8 nodes)
+11:39:07.135269 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:07.135278 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:07.135292 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:07.135298 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:07.135305 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:07.135310 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:07.135316 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:07.135321 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:07.135331 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+11:39:07.135336 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+11:39:07.135342 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+11:39:07.135346 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+11:39:07.135353 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_location
+11:39:07.135358 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_location
+11:39:07.135908 [info ]:     Failed [-------] model workshop_dwh_bq_dbt_marts.dim_location (table)
+11:39:07.135924 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location [error]
+11:39:07.135945 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: sales_project, model: seed_region_mapping, version: None
+(in models/marts/core/dim_location.sql:10:19)
+  --> models/marts/core/dim_location.sql:10:19
+11:39:07.135973 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:39:07.135986 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:39:07.135995 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:39:07.136002 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:39:07.136075 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:39:07.136087 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:39:07.136095 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:39:07.136104 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:39:07.136115 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:07.136121 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:07.136617 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:39:07.136628 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:39:07.137768 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:39:07.137787 [info ]: Started analyzing (1 nodes)
+11:39:07.137794 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_location
+11:39:07.137812 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_location (table)
+11:39:07.137823 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:39:07.137826 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+11:39:07.141834 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+11:39:07.141860 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_location [success]
+11:39:07.141868 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 1 errors)
+11:39:07.141951 [debug]: Incremental compilation - 8 nodes selected: {"model.sales_project.dim_location", "model.sales_project.fct_sales", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_location", "seed.sales_project.raw_location"}
+11:39:07.145204 [info ]: Cached model count updated: 15 models (accurate)
+11:39:14.830475 [info ]: Started loading project
+11:39:14.843341 [info ]: Started parsing
+11:39:14.860154 [info ]: Finished loading project [  0.03s]
+11:39:15.085515 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_customer.sql:14:19
+11:39:15.085544 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:39:15.085555 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:39:15.085676 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:39:15.089687 [info ]: Cached model count updated: 15 models (estimate)
+11:39:15.089705 [info ]: Cached model count updated: 15 models (accurate)
+11:39:15.089841 [info ]: Started scheduling
+11:39:15.090597 [info ]: Finished scheduling [  0.00s]
+11:39:15.091898 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:15.091915 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:15.091923 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:15.091930 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:15.091940 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:15.091941 [info ]: Finished parsing [  0.25s]
+11:39:15.274285 [info ]: Started building task graph
+11:39:15.274463 [info ]: Finished building task graph [  0.00s]
+11:39:15.274556 [info ]: Started rendering (7 nodes)
+11:39:15.274566 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:15.274574 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:15.274590 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:15.274596 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:15.274603 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:15.274610 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:15.274625 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:15.274629 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:15.274638 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_time
+11:39:15.274642 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_time
+11:39:15.274650 [info ]: Started seed workshop_dwh_bq_dbt_seeds.calendar
+11:39:15.274655 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.calendar
+11:39:15.275192 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:39:15.275209 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:39:15.275277 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:39:15.275298 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:39:15.275334 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:39:15.275371 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:39:15.275388 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:15.275396 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:15.275384 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:39:15.275427 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:39:15.275975 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:39:15.275989 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:39:15.281085 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.calendar [success]
+11:39:15.281119 [info ]: Started analyzing (1 nodes)
+11:39:15.281126 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.calendar
+11:39:15.281147 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.calendar (table)
+11:39:15.281159 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.calendar [success]
+11:39:15.281163 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+11:39:15.282387 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_time (view)
+11:39:15.282406 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_time [success]
+11:39:15.282411 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:39:15.282512 [debug]: Incremental compilation - 7 nodes selected: {"model.sales_project.fct_sales", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_time", "seed.sales_project.calendar"}
+11:39:15.286003 [info ]: Cached model count updated: 15 models (accurate)
+11:39:22.674747 [info ]: Started loading project
+11:39:22.693169 [info ]: Started parsing
+11:39:22.714380 [info ]: Finished loading project [  0.04s]
+11:39:22.774096 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:39:22.774130 [error]: dbt1005: Ref 'seed_product_category' not found in project. Searched for 'sales_project.seed_product_category, seed_product_category'
+  --> models/marts/core/dim_product.sql:10:19
+11:39:22.774140 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:39:22.777106 [info ]: Cached model count updated: 15 models (estimate)
+11:39:22.777125 [info ]: Cached model count updated: 15 models (accurate)
+11:39:22.777347 [info ]: Started scheduling
+11:39:22.778295 [info ]: Finished scheduling [  0.00s]
+11:39:22.779010 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:22.779022 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:22.779030 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:22.779037 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:22.779035 [info ]: Finished parsing [  0.09s]
+11:39:22.779045 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:22.952838 [info ]: Started building task graph
+11:39:22.953032 [info ]: Finished building task graph [  0.00s]
+11:39:22.953133 [info ]: Started rendering (12 nodes)
+11:39:22.953143 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:22.953151 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:22.953167 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:22.953172 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:22.953180 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:22.953185 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:22.953193 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:22.953198 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:22.953206 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:39:22.953210 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:39:22.953216 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+11:39:22.953220 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+11:39:22.953228 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_sales
+11:39:22.953232 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_sales
+11:39:22.953238 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:39:22.953242 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:39:22.953247 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_customer
+11:39:22.953252 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_customer
+11:39:22.953257 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:39:22.953261 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:39:22.954278 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:39:22.954301 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:39:22.954312 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:39:22.954321 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:39:22.954441 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:39:22.954456 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:39:22.954588 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:39:22.954600 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:39:22.954614 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:22.954622 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:22.954810 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales (view)
+11:39:22.954829 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales [success]
+11:39:22.954864 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer (view)
+11:39:22.954890 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer [success]
+11:39:22.954917 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+11:39:22.954960 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+11:39:22.955043 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+11:39:22.955070 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+11:39:22.955424 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:39:22.955472 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:39:22.957199 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+11:39:22.957230 [info ]: Started analyzing (3 nodes)
+11:39:22.957237 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_customer
+11:39:22.957249 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+11:39:22.957257 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_sales
+11:39:22.957275 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_sales (table)
+11:39:22.957287 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+11:39:22.957294 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_customer (table)
+11:39:22.957301 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+11:39:22.957869 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:39:22.957882 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:39:22.957894 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.lookup_region_mapping (table)
+11:39:22.957905 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:39:22.957909 [info ]: Finished analyzing [  0.00s] (3 nodes, 0 skipped, 0 errors)
+11:39:22.964070 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+11:39:22.964094 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_customer [success]
+11:39:22.964099 [info ]: Finished rendering [  0.01s] (12 nodes, 0 skipped, 0 errors)
+11:39:22.964187 [debug]: Incremental compilation - 12 nodes selected: {"model.sales_project.dim_customer", "model.sales_project.fct_sales", "model.sales_project.int_customer_metrics", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_customer", "model.sales_project.stg_sales", "seed.sales_project.lookup_region_mapping", "seed.sales_project.raw_customer", "seed.sales_project.raw_sales"}
+11:39:22.966998 [info ]: Cached model count updated: 15 models (accurate)
+11:39:30.803780 [info ]: Started loading project
+11:39:30.819749 [info ]: Started parsing
+11:39:30.842688 [info ]: Finished loading project [  0.04s]
+11:39:31.229216 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:39:31.229256 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:39:31.234095 [info ]: Cached model count updated: 15 models (estimate)
+11:39:31.234115 [info ]: Cached model count updated: 15 models (accurate)
+11:39:31.234247 [info ]: Started scheduling
+11:39:31.235184 [info ]: Finished scheduling [  0.00s]
+11:39:31.236112 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:31.236126 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:31.236135 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:31.236136 [info ]: Finished parsing [  0.42s]
+11:39:31.236146 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:31.236211 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:31.433649 [info ]: Started building task graph
+11:39:31.433850 [info ]: Finished building task graph [  0.00s]
+11:39:31.433962 [info ]: Started rendering (9 nodes)
+11:39:31.433973 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:31.433980 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:31.434000 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:31.434006 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:31.434015 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:31.434020 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:31.434027 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:31.434033 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:31.434039 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+11:39:31.434044 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+11:39:31.434052 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:39:31.434056 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:39:31.434063 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+11:39:31.434068 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+11:39:31.434075 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_product
+11:39:31.434080 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_product
+11:39:31.434699 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:39:31.434720 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:39:31.434767 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_staging.stg_product (view)
+11:39:31.434779 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product [success]
+11:39:31.434853 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:39:31.434875 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:39:31.434909 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:39:31.434919 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:39:31.434937 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:31.434945 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:31.435001 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:39:31.435017 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:39:31.436128 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:39:31.436204 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:39:31.437820 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+11:39:31.437863 [info ]: Started analyzing (2 nodes)
+11:39:31.437873 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:39:31.437886 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:39:31.437895 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_product
+11:39:31.437923 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_product (table)
+11:39:31.437940 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:39:31.437951 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.lookup_product_category (table)
+11:39:31.437959 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+11:39:31.437963 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+11:39:31.443103 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_product (table)
+11:39:31.443123 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_product [success]
+11:39:31.443128 [info ]: Finished rendering [  0.01s] (9 nodes, 0 skipped, 0 errors)
+11:39:31.443234 [debug]: Incremental compilation - 9 nodes selected: {"model.sales_project.dim_product", "model.sales_project.fct_sales", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_product", "seed.sales_project.lookup_product_category", "seed.sales_project.raw_product"}
+11:39:31.447109 [info ]: Cached model count updated: 15 models (accurate)
+11:39:37.388856 [info ]: Started loading project
+11:39:37.405537 [info ]: Started parsing
+11:39:37.428817 [info ]: Finished loading project [  0.04s]
+11:39:37.536360 [error]: dbt1005: Ref 'seed_region_mapping' not found in project. Searched for 'sales_project.seed_region_mapping, seed_region_mapping'
+  --> models/marts/core/dim_location.sql:10:19
+11:39:37.536393 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:39:37.542388 [info ]: Cached model count updated: 15 models (estimate)
+11:39:37.542413 [info ]: Cached model count updated: 15 models (accurate)
+11:39:37.542570 [info ]: Started scheduling
+11:39:37.543328 [info ]: Finished scheduling [  0.00s]
+11:39:37.544317 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:37.544338 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:37.544346 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:37.544348 [info ]: Finished parsing [  0.14s]
+11:39:37.544355 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:37.544365 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:37.745843 [info ]: Started building task graph
+11:39:37.746052 [info ]: Finished building task graph [  0.00s]
+11:39:37.746152 [info ]: Started rendering (9 nodes)
+11:39:37.746163 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:37.746172 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:37.746190 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:37.746195 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:37.746202 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:37.746206 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:37.746213 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:37.746218 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:37.746225 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+11:39:37.746231 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+11:39:37.746238 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:39:37.746242 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:39:37.746248 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+11:39:37.746253 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+11:39:37.746259 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_product
+11:39:37.746263 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_product
+11:39:37.746880 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_staging.stg_product (view)
+11:39:37.746898 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product [success]
+11:39:37.746910 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:39:37.746917 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:39:37.746976 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:39:37.746988 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:39:37.747013 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:39:37.747028 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:39:37.747096 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:39:37.747107 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:39:37.747119 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:37.747126 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:37.747800 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:39:37.747841 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:39:37.748318 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product (table)
+11:39:37.748334 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product [success]
+11:39:37.749041 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+11:39:37.749059 [info ]: Started analyzing (2 nodes)
+11:39:37.749067 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+11:39:37.749085 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.lookup_product_category (table)
+11:39:37.749095 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+11:39:37.749170 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:39:37.749176 [info ]: Finished rendering [  0.00s] (9 nodes, 0 skipped, 0 errors)
+11:39:37.749189 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_product
+11:39:37.749202 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_product (table)
+11:39:37.749212 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+11:39:37.749215 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+11:39:37.749301 [debug]: Incremental compilation - 9 nodes selected: {"model.sales_project.dim_product", "model.sales_project.fct_sales", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_product", "seed.sales_project.lookup_product_category", "seed.sales_project.raw_product"}
+11:39:37.752461 [info ]: Cached model count updated: 15 models (accurate)
+11:39:43.932628 [info ]: Started loading project
+11:39:43.947239 [info ]: Started parsing
+11:39:43.968174 [info ]: Finished loading project [  0.04s]
+11:39:44.040351 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:39:44.043569 [info ]: Cached model count updated: 15 models (estimate)
+11:39:44.043590 [info ]: Cached model count updated: 15 models (accurate)
+11:39:44.043746 [info ]: Started scheduling
+11:39:44.044491 [info ]: Finished scheduling [  0.00s]
+11:39:44.045527 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:44.045554 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:44.045561 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:44.045559 [info ]: Finished parsing [  0.10s]
+11:39:44.045573 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:44.045581 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:44.228782 [info ]: Started building task graph
+11:39:44.228999 [info ]: Finished building task graph [  0.00s]
+11:39:44.229115 [info ]: Started rendering (9 nodes)
+11:39:44.229127 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:44.229137 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:44.229157 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:44.229164 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:44.229173 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:44.229180 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:44.229197 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:44.229204 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:44.229213 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+11:39:44.229217 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+11:39:44.229225 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:39:44.229231 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:39:44.229246 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+11:39:44.229251 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+11:39:44.229258 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_location
+11:39:44.229263 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_location
+11:39:44.230127 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:39:44.230151 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:39:44.230166 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:39:44.230220 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:39:44.230465 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:39:44.230549 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:39:44.230596 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:44.230618 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:44.230651 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:39:44.230676 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:39:44.230716 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+11:39:44.230758 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location [success]
+11:39:44.231610 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:39:44.231632 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:39:44.232671 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:39:44.232695 [info ]: Started analyzing (2 nodes)
+11:39:44.232703 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_location
+11:39:44.232723 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_location (table)
+11:39:44.232735 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:39:44.232743 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:39:44.232750 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:39:44.232761 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.lookup_region_mapping (table)
+11:39:44.232771 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:39:44.232774 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+11:39:44.241266 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_location (table)
+11:39:44.241303 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_location [success]
+11:39:44.241309 [info ]: Finished rendering [  0.01s] (9 nodes, 0 skipped, 0 errors)
+11:39:44.241430 [debug]: Incremental compilation - 9 nodes selected: {"model.sales_project.dim_location", "model.sales_project.fct_sales", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_location", "seed.sales_project.lookup_region_mapping", "seed.sales_project.raw_location"}
+11:39:44.245073 [info ]: Cached model count updated: 15 models (accurate)
+11:39:50.879568 [info ]: Started loading project
+11:39:50.893588 [info ]: Started parsing
+11:39:50.914307 [info ]: Finished loading project [  0.03s]
+11:39:51.120660 [error]: dbt1005: Ref 'seed_time' not found in project. Searched for 'sales_project.seed_time, seed_time'
+  --> models/marts/core/dim_time.sql:9:19
+11:39:51.125297 [info ]: Cached model count updated: 15 models (estimate)
+11:39:51.125316 [info ]: Cached model count updated: 15 models (accurate)
+11:39:51.125461 [info ]: Started scheduling
+11:39:51.126319 [info ]: Finished scheduling [  0.00s]
+11:39:51.127551 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:51.127571 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:51.127580 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:51.127590 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:51.127598 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:51.127600 [info ]: Finished parsing [  0.23s]
+11:39:51.307028 [info ]: Started building task graph
+11:39:51.307246 [info ]: Finished building task graph [  0.00s]
+11:39:51.307372 [info ]: Started rendering (9 nodes)
+11:39:51.307386 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:51.307398 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:51.307420 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:51.307428 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:51.307446 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:51.307453 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:51.307462 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:51.307467 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:51.307475 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+11:39:51.307480 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+11:39:51.307488 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:39:51.307493 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:39:51.307501 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+11:39:51.307506 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+11:39:51.307513 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_location
+11:39:51.307517 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_location
+11:39:51.308269 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:39:51.308292 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:39:51.308307 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:39:51.308314 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:39:51.308327 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:51.308334 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:51.308400 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:39:51.308436 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:39:51.308579 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:39:51.308596 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:39:51.308639 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+11:39:51.308684 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location [success]
+11:39:51.309226 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:39:51.309243 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:39:51.309770 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location (table)
+11:39:51.309787 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location [success]
+11:39:51.310574 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:39:51.310592 [info ]: Started analyzing (2 nodes)
+11:39:51.310600 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+11:39:51.310613 [debug]: Finished rendering [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:39:51.310617 [info ]: Finished rendering [  0.00s] (9 nodes, 0 skipped, 0 errors)
+11:39:51.310623 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_location
+11:39:51.310640 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.raw_location (table)
+11:39:51.310651 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+11:39:51.310660 [info ]:  Succeeded [  0.00s] seed  workshop_dwh_bq_dbt_seeds.lookup_region_mapping (table)
+11:39:51.310670 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+11:39:51.310674 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+11:39:51.310761 [debug]: Incremental compilation - 9 nodes selected: {"model.sales_project.dim_location", "model.sales_project.fct_sales", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_location", "seed.sales_project.lookup_region_mapping", "seed.sales_project.raw_location"}
+11:39:51.314822 [info ]: Cached model count updated: 15 models (accurate)
+11:39:59.167945 [info ]: Started loading project
+11:39:59.184403 [info ]: Started parsing
+11:39:59.201083 [info ]: Finished loading project [  0.03s]
+11:39:59.292540 [info ]: Finished parsing [  0.11s]
+11:39:59.296459 [info ]: Cached model count updated: 15 models (estimate)
+11:39:59.296481 [info ]: Cached model count updated: 15 models (accurate)
+11:39:59.296631 [info ]: Started scheduling
+11:39:59.297383 [info ]: Finished scheduling [  0.00s]
+11:39:59.298294 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:59.298312 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:59.298319 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:59.298326 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:59.298333 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:39:59.467871 [info ]: Started building task graph
+11:39:59.468038 [info ]: Finished building task graph [  0.00s]
+11:39:59.468155 [info ]: Started rendering (6 nodes)
+11:39:59.468164 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:59.468172 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:59.468187 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_time
+11:39:59.468195 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_time
+11:39:59.468861 [info ]: Started analyzing (6 nodes)
+11:39:59.468867 [debug]: Started analyzing model workshop_dwh_bq_dbt.int_sales_enriched
+11:39:59.468869 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:39:59.474965 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_time [success]
+11:39:59.474992 [debug]: Started analyzing model workshop_dwh_bq_dbt_marts.dim_time
+11:39:59.495984 [info ]:  Succeeded [  0.03s] model workshop_dwh_bq_dbt_marts.dim_time (table)
+11:39:59.496011 [debug]: Finished analyzing [  0.02s] model workshop_dwh_bq_dbt_marts.dim_time [success]
+11:39:59.498952 [info ]:  Succeeded [  0.03s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:39:59.498971 [debug]: Finished analyzing [  0.03s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:39:59.498987 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:59.498996 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:59.499543 [debug]: Started analyzing model workshop_dwh_bq_dbt_marts.fct_sales
+11:39:59.499581 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:39:59.525632 [info ]:  Succeeded [  0.03s] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:39:59.525656 [debug]: Finished analyzing [  0.03s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:39:59.525672 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:59.525681 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:59.525695 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:59.525703 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:59.525716 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:59.525723 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:59.526350 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:39:59.526350 [debug]: Started analyzing model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:39:59.526418 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:39:59.526416 [debug]: Started analyzing model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:39:59.526430 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:39:59.526436 [info ]: Finished rendering [  0.06s] (6 nodes, 0 skipped, 0 errors)
+11:39:59.526443 [debug]: Started analyzing model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:39:59.537928 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:39:59.537952 [debug]: Finished analyzing [  0.01s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:39:59.553228 [info ]:  Succeeded [  0.03s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:39:59.553254 [debug]: Finished analyzing [  0.03s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:39:59.696533 [info ]:  Succeeded [  0.17s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:39:59.696561 [debug]: Finished analyzing [  0.17s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:39:59.696568 [info ]: Finished analyzing [  0.23s] (6 nodes, 0 skipped, 0 errors)
+11:39:59.696654 [debug]: Incremental compilation - 6 nodes selected: {"model.sales_project.dim_time", "model.sales_project.fct_sales", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily"}
+11:39:59.699415 [info ]: Cached model count updated: 15 models (accurate)
+11:40:08.059002 [info ]: Started loading project
+11:40:08.069394 [info ]: Started parsing
+11:40:08.086265 [info ]: Finished loading project [  0.03s]
+11:40:08.293989 [info ]: Finished parsing [  0.22s]
+11:40:08.297431 [info ]: Cached model count updated: 15 models (estimate)
+11:40:08.297449 [info ]: Cached model count updated: 15 models (accurate)
+11:40:08.297565 [info ]: Started scheduling
+11:40:08.300441 [info ]: Finished scheduling [  0.00s]
+11:40:08.301362 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:08.301378 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:08.301385 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:08.301394 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:08.301402 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:08.467351 [info ]: Started building task graph
+11:40:08.467546 [info ]: Finished building task graph [  0.00s]
+11:40:08.467660 [info ]: Started rendering (14 nodes)
+11:40:08.467671 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:40:08.467683 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:40:08.467698 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:40:08.467705 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:40:08.467713 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:40:08.467721 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:40:08.467730 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:40:08.467736 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:40:08.467746 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_time
+11:40:08.467754 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_time
+11:40:08.467760 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+11:40:08.467765 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+11:40:08.467772 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+11:40:08.467777 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+11:40:08.467783 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+11:40:08.467788 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+11:40:08.467797 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+11:40:08.467801 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+11:40:08.467810 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+11:40:08.467814 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+11:40:08.467822 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_sales
+11:40:08.467826 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_sales
+11:40:08.467833 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_customer
+11:40:08.467838 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_customer
+11:40:08.468711 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:40:08.468729 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:40:08.468739 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:40:08.468746 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:40:08.468840 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_time (view)
+11:40:08.468850 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_time [success]
+11:40:08.468858 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product (table)
+11:40:08.468868 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product [success]
+11:40:08.469025 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product (view)
+11:40:08.469037 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product [success]
+11:40:08.469129 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location (table)
+11:40:08.469143 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location [success]
+11:40:08.469152 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:40:08.469159 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:40:08.469170 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:40:08.469179 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:40:08.469189 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer (view)
+11:40:08.469197 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer [success]
+11:40:08.469206 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:40:08.469213 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:40:08.469287 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales (view)
+11:40:08.469303 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+11:40:08.469312 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location [success]
+11:40:08.469319 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+11:40:08.469322 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales [success]
+11:40:08.469328 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+11:40:08.469343 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+11:40:08.469348 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+11:40:08.469679 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:40:08.469691 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:40:08.469728 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+11:40:08.469737 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_customer [success]
+11:40:08.469740 [info ]: Finished rendering [  0.00s] (14 nodes, 0 skipped, 0 errors)
+11:40:08.469828 [debug]: Incremental compilation - 14 nodes selected: {"model.sales_project.dim_customer", "model.sales_project.dim_location", "model.sales_project.dim_product", "model.sales_project.fct_sales", "model.sales_project.int_customer_metrics", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_customer", "model.sales_project.stg_location", "model.sales_project.stg_product", "model.sales_project.stg_sales", "model.sales_project.stg_time"}
+11:40:08.473059 [info ]: Cached model count updated: 15 models (accurate)
+11:40:14.317393 [info ]: Started loading project
+11:40:14.334162 [info ]: Started parsing
+11:40:14.354562 [info ]: Finished loading project [  0.04s]
+11:40:14.423753 [info ]: Finished parsing [  0.09s]
+11:40:14.428300 [info ]: Cached model count updated: 15 models (estimate)
+11:40:14.428323 [info ]: Cached model count updated: 15 models (accurate)
+11:40:14.428478 [info ]: Started scheduling
+11:40:14.431215 [info ]: Finished scheduling [  0.00s]
+11:40:14.432873 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:14.432897 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:14.432906 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:14.432916 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:14.432926 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:40:14.610240 [info ]: Started building task graph
+11:40:14.610466 [info ]: Finished building task graph [  0.00s]
+11:40:14.610594 [info ]: Started rendering (14 nodes)
+11:40:14.610608 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:40:14.610618 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:40:14.610642 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:40:14.610649 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:40:14.610657 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:40:14.610663 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:40:14.610676 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:40:14.610680 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:40:14.610690 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_time
+11:40:14.610695 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_time
+11:40:14.610702 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+11:40:14.610706 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+11:40:14.610713 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+11:40:14.610717 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+11:40:14.610724 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+11:40:14.610728 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+11:40:14.610734 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+11:40:14.610740 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+11:40:14.610746 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+11:40:14.610751 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+11:40:14.610757 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_sales
+11:40:14.610761 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_sales
+11:40:14.610770 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_customer
+11:40:14.610775 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_customer
+11:40:14.611490 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:40:14.611511 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:40:14.611536 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:40:14.611549 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:40:14.611568 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:40:14.611583 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:40:14.611703 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:40:14.611714 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:40:14.611727 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:40:14.611735 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:40:14.611806 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales (view)
+11:40:14.611832 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_sales [success]
+11:40:14.611918 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product (view)
+11:40:14.611936 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_product [success]
+11:40:14.611936 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer (view)
+11:40:14.611955 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_customer [success]
+11:40:14.611983 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+11:40:14.611995 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_location [success]
+11:40:14.612171 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+11:40:14.612186 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+11:40:14.612190 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+11:40:14.612197 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+11:40:14.612207 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location (table)
+11:40:14.612219 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_location [success]
+11:40:14.612238 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_staging.stg_time (view)
+11:40:14.612250 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_staging.stg_time [success]
+11:40:14.612349 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product (table)
+11:40:14.612359 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_product [success]
+11:40:14.612555 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:40:14.612565 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:40:14.612761 [info ]:  Succeeded [-------] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+11:40:14.612773 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_customer [success]
+11:40:14.612777 [info ]: Finished rendering [  0.00s] (14 nodes, 0 skipped, 0 errors)
+11:40:14.612899 [debug]: Incremental compilation - 14 nodes selected: {"model.sales_project.dim_customer", "model.sales_project.dim_location", "model.sales_project.dim_product", "model.sales_project.fct_sales", "model.sales_project.int_customer_metrics", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_customer", "model.sales_project.stg_location", "model.sales_project.stg_product", "model.sales_project.stg_sales", "model.sales_project.stg_time"}
+11:40:14.616448 [info ]: Cached model count updated: 15 models (accurate)
+11:57:47.088075 [info ]: Started loading project
+11:57:47.107337 [info ]: Started parsing
+11:57:47.132875 [info ]: Finished loading project [  0.04s]
+11:57:47.336707 [info ]: Finished parsing [  0.23s]
+11:57:47.341472 [info ]: Cached model count updated: 15 models (estimate)
+11:57:47.341496 [info ]: Cached model count updated: 15 models (accurate)
+11:57:47.341629 [info ]: Started scheduling
+11:57:47.344018 [info ]: Finished scheduling [  0.00s]
+11:57:47.345882 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location', 'test.sales_project.source_not_null_raw_raw_location_location_id_integer.164632ed15' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:57:47.345912 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time', 'test.sales_project.source_not_null_raw_raw_time_time_id_integer.68907e29e7' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:57:47.345921 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product', 'test.sales_project.source_not_null_raw_raw_product_product_id_integer.3e711ab742' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:57:47.345930 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales', 'test.sales_project.source_not_null_raw_raw_sales_sales_id_integer.97b395cdc0' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:57:47.345943 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer', 'test.sales_project.source_not_null_raw_raw_customer_customer_id_integer.33bebb6e2a' and 1 others: [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+11:57:47.873371 [info ]: Started building task graph
+11:57:47.873559 [info ]: Finished building task graph [  0.00s]
+11:57:47.873671 [info ]: Started rendering (14 nodes)
+11:57:47.873680 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:57:47.873689 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+11:57:47.873707 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:57:47.873714 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+11:57:47.873722 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:57:47.873727 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+11:57:47.873737 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+11:57:47.873743 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+11:57:47.873751 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_time
+11:57:47.873757 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_time
+11:57:47.873763 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+11:57:47.873768 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+11:57:47.873774 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+11:57:47.873778 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+11:57:47.873785 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+11:57:47.873789 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+11:57:47.873796 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+11:57:47.873801 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+11:57:47.873808 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+11:57:47.873814 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+11:57:47.873821 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_sales
+11:57:47.873825 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_sales
+11:57:47.873831 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_customer
+11:57:47.873836 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_customer
+11:57:47.881635 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+11:57:47.881664 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_location [success]
+11:57:47.881679 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+11:57:47.881687 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+11:57:47.881697 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_product (view)
+11:57:47.881705 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_product [success]
+11:57:47.881847 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_product (table)
+11:57:47.881858 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_product [success]
+11:57:47.882126 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_location (table)
+11:57:47.882137 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_location [success]
+11:57:47.882178 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_time (view)
+11:57:47.882190 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_time [success]
+11:57:47.882690 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_customer (view)
+11:57:47.882701 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_customer [success]
+11:57:47.883204 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+11:57:47.883220 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+11:57:47.883237 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+11:57:47.883246 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+11:57:47.883260 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+11:57:47.883269 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+11:57:47.883278 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+11:57:47.883284 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+11:57:47.883367 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_sales (view)
+11:57:47.883380 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_sales [success]
+11:57:47.883577 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+11:57:47.883588 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+11:57:47.884773 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+11:57:47.884794 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+11:57:47.888575 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+11:57:47.888603 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+11:57:47.888617 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+11:57:47.888629 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_customer [success]
+11:57:47.888634 [info ]: Finished rendering [  0.01s] (14 nodes, 0 skipped, 0 errors)
+11:57:47.888730 [debug]: Incremental compilation - 14 nodes selected: {"model.sales_project.dim_customer", "model.sales_project.dim_location", "model.sales_project.dim_product", "model.sales_project.fct_sales", "model.sales_project.int_customer_metrics", "model.sales_project.int_sales_enriched", "model.sales_project.mart_customer_cohort", "model.sales_project.mart_product_performance", "model.sales_project.mart_revenue_daily", "model.sales_project.stg_customer", "model.sales_project.stg_location", "model.sales_project.stg_product", "model.sales_project.stg_sales", "model.sales_project.stg_time"}
+11:57:47.892200 [info ]: Cached model count updated: 15 models (accurate)
+12:01:23.134197 [info ]: Started loading project
+12:01:23.149310 [info ]: Started loading project
+12:01:23.150128 [info ]: Finished loading project [  0.02s]
+12:01:23.434392 [info ]: Started parsing
+12:01:23.475892 [info ]: Finished loading project [  0.33s]
+12:01:23.719192 [info ]: Finished parsing [  0.28s]
+12:01:23.720457 [info ]: Cached model count updated: 15 models (estimate)
+12:01:23.720468 [info ]: Cached model count updated: 15 models (accurate)
+12:01:23.720559 [info ]: Started scheduling
+12:01:23.720850 [info ]: Finished scheduling [  0.00s]
+12:01:26.556656 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_customer'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_customer': [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+12:01:26.556708 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_location'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_location': [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+12:01:26.556730 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_product'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_product': [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+12:01:26.556758 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_sales'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_sales': [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+12:01:26.556788 [warn ]: dbt1014: Failed to download source schema for 'source.sales_project.raw.raw_time'. Setting 'static_analysis' to off. Skipping analysis for 'model.sales_project.stg_time': [BigQuery] googleapi: Error 404: Not found: Dataset dwh-bootcamp-bigquery:raw, notFound
+12:01:26.769992 [info ]: Started building task graph
+12:01:26.770352 [info ]: Finished building task graph [  0.00s]
+12:01:26.770541 [info ]: Started rendering (22 nodes)
+12:01:26.770563 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+12:01:26.770576 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_revenue_daily
+12:01:26.770601 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_product_performance
+12:01:26.770608 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_product_performance
+12:01:26.770616 [info ]: Started model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+12:01:26.770621 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.mart_customer_cohort
+12:01:26.770632 [info ]: Started model workshop_dwh_bq_dbt.int_sales_enriched
+12:01:26.770638 [debug]: Started rendering model workshop_dwh_bq_dbt.int_sales_enriched
+12:01:26.770645 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_time
+12:01:26.770650 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_time
+12:01:26.770660 [info ]: Started seed workshop_dwh_bq_dbt_seeds.calendar
+12:01:26.770665 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.calendar
+12:01:26.770675 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_product
+12:01:26.770680 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_product
+12:01:26.770687 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+12:01:26.770693 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+12:01:26.770702 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_product
+12:01:26.770709 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_product
+12:01:26.770720 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_product
+12:01:26.770725 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_product
+12:01:26.770733 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_location
+12:01:26.770738 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_location
+12:01:26.770745 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_location
+12:01:26.770749 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_location
+12:01:26.770760 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_location
+12:01:26.770765 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_location
+12:01:26.770773 [info ]: Started seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+12:01:26.770779 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+12:01:26.770786 [info ]: Started model workshop_dwh_bq_dbt.int_customer_metrics
+12:01:26.770793 [debug]: Started rendering model workshop_dwh_bq_dbt.int_customer_metrics
+12:01:26.770802 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_sales
+12:01:26.770810 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_sales
+12:01:26.770820 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_sales
+12:01:26.770825 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_sales
+12:01:26.770834 [info ]: Started model workshop_dwh_bq_dbt_staging.stg_customer
+12:01:26.770840 [debug]: Started rendering model workshop_dwh_bq_dbt_staging.stg_customer
+12:01:26.770848 [info ]: Started seed workshop_dwh_bq_dbt_seeds.raw_customer
+12:01:26.770853 [debug]: Started rendering seed workshop_dwh_bq_dbt_seeds.raw_customer
+12:01:26.776667 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort (table)
+12:01:26.776731 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.mart_customer_cohort [success]
+12:01:26.776753 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_time (view)
+12:01:26.776765 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_time [success]
+12:01:26.776781 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.mart_product_performance (table)
+12:01:26.776794 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.mart_product_performance [success]
+12:01:26.777419 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_product (view)
+12:01:26.777438 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_product [success]
+12:01:26.777457 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_location (view)
+12:01:26.777467 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_location [success]
+12:01:26.777894 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily (table)
+12:01:26.777910 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.mart_revenue_daily [success]
+12:01:26.778181 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_sales (view)
+12:01:26.778200 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_sales [success]
+12:01:26.778546 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_staging.stg_customer (view)
+12:01:26.778574 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_staging.stg_customer [success]
+12:01:26.779039 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_location (table)
+12:01:26.779060 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_location [success]
+12:01:26.779073 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_product (table)
+12:01:26.779084 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_product [success]
+12:01:26.779807 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt.int_sales_enriched (ephemeral)
+12:01:26.779827 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt.int_sales_enriched [success]
+12:01:26.779850 [info ]: Started model workshop_dwh_bq_dbt_marts.fct_sales
+12:01:26.779861 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.fct_sales
+12:01:26.780423 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt.int_customer_metrics (ephemeral)
+12:01:26.780439 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt.int_customer_metrics [success]
+12:01:26.780456 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_customer
+12:01:26.780464 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_customer
+12:01:26.781777 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+12:01:26.781808 [info ]: Started analyzing (8 nodes)
+12:01:26.781819 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping
+12:01:26.781835 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+12:01:26.781844 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.lookup_product_category
+12:01:26.781865 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.lookup_product_category (table)
+12:01:26.781880 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_product_category [success]
+12:01:26.781887 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.lookup_region_mapping (table)
+12:01:26.781894 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.lookup_region_mapping [success]
+12:01:26.782356 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+12:01:26.782378 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_customer
+12:01:26.782391 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_customer (table)
+12:01:26.782403 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_customer [success]
+12:01:26.782525 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+12:01:26.782541 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_location
+12:01:26.782554 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+12:01:26.782563 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_sales
+12:01:26.782575 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+12:01:26.782584 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.raw_product
+12:01:26.782592 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_location (table)
+12:01:26.782601 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_location [success]
+12:01:26.782615 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_product (table)
+12:01:26.782623 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_product [success]
+12:01:26.782632 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.raw_sales (table)
+12:01:26.782639 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.raw_sales [success]
+12:01:26.783280 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.dim_customer (table)
+12:01:26.783294 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.dim_customer [success]
+12:01:26.783373 [info ]:  Succeeded [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales (table)
+12:01:26.783387 [debug]: Finished rendering [  0.00s] model workshop_dwh_bq_dbt_marts.fct_sales [success]
+12:01:26.783561 [debug]: Finished rendering [  0.01s] seed workshop_dwh_bq_dbt_seeds.calendar [success]
+12:01:26.783576 [debug]: Started analyzing seed workshop_dwh_bq_dbt_seeds.calendar
+12:01:26.783590 [info ]:  Succeeded [  0.01s] seed  workshop_dwh_bq_dbt_seeds.calendar (table)
+12:01:26.783600 [debug]: Finished analyzing [  0.00s] seed workshop_dwh_bq_dbt_seeds.calendar [success]
+12:01:26.783613 [info ]: Started model workshop_dwh_bq_dbt_marts.dim_time
+12:01:26.783620 [debug]: Started rendering model workshop_dwh_bq_dbt_marts.dim_time
+12:01:26.792110 [debug]: Finished rendering [  0.01s] model workshop_dwh_bq_dbt_marts.dim_time [success]
+12:01:26.792129 [info ]: Finished rendering [  0.02s] (22 nodes, 0 skipped, 0 errors)
+12:01:26.792146 [debug]: Started analyzing model workshop_dwh_bq_dbt_marts.dim_time
+12:01:26.799683 [info ]:  Succeeded [  0.01s] model workshop_dwh_bq_dbt_marts.dim_time (table)
+12:01:26.799752 [debug]: Finished analyzing [  0.01s] model workshop_dwh_bq_dbt_marts.dim_time [success]
+12:01:26.799762 [info ]: Finished analyzing [  0.02s] (8 nodes, 0 skipped, 0 errors)
+12:01:26.804049 [info ]: Cached model count updated: 15 models (accurate)
+12:34:42.031427 [info ]: Started scheduling
+12:34:42.036721 [info ]: Finished scheduling [  0.01s]
+13:27:00.450259 [info ]: Started scheduling
+13:27:00.451790 [info ]: Finished scheduling [  0.00s]
+13:27:08.082586 [info ]: Started scheduling
+13:27:08.085453 [info ]: Finished scheduling [  0.00s]
+13:28:34.170525 [info ]: Started scheduling
+13:28:34.171650 [info ]: Finished scheduling [  0.00s]
+13:28:56.941232 [info ]: Started scheduling
+13:28:56.942255 [info ]: Finished scheduling [  0.00s]
+==================== 2026-05-31T09:04:39.629204Z | c64d5c3d-5a72-4072-8520-f7d4bb0f9a04 ====================
+09:04:39.629466 [info ]: Starting dbt LSP server
+09:04:39.629538 [info ]: Connecting to LSP client on port 8000
+09:04:39.630473 [info ]: Successfully connected to LSP client
+09:04:39.630481 [info ]: Creating LSP service...
+09:04:39.662258 [info ]: Creating LSP server...
+09:04:39.662270 [info ]: Starting LSP server...
+09:04:39.672437 [info ]: Started loading project
+09:04:39.676356 [info ]: Finished loading project [  0.00s]
+09:04:45.028932 [info ]: Started loading project
+09:04:45.378993 [info ]: Started parsing
+09:04:45.526350 [info ]: Finished loading project [  0.50s]
+09:04:45.993558 [info ]: Finished parsing [  0.61s]
+09:04:45.994884 [info ]: Cached model count updated: 15 models (estimate)
+09:04:45.994893 [info ]: Cached model count updated: 15 models (accurate)
+09:04:45.995062 [info ]: Started scheduling
+09:04:45.995499 [info ]: Finished scheduling [  0.00s]

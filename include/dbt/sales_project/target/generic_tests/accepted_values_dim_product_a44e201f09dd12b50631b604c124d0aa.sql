@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="price_tier", model=get_where_subquery(ref('dim_product')), values=["Budget","Mid-range","Premium","Luxury"]) }}

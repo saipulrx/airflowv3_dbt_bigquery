@@ -18,7 +18,7 @@ SALES_ASSET = Asset("bq://sales-prod.raw.sales")
 GITHUB_RAW_BASE_URL = "https://raw.githubusercontent.com/saipulrx/dbt-bigquery-colibri/refs/heads/main/seeds/"
 GCP_PROJECT_ID = "dwh-bootcamp-bigquery"           # Ganti dengan Project ID GCP Anda
 GCS_BUCKET = "raw_data_dwh_modeling"        # Ganti dengan nama Bucket GCS Anda
-BQ_DATASET_NAME = "workshop_dwh_bq_dbt"
+BQ_DATASET_NAME = "latihan_dwh_bq_dbt"
 BQ_LOCATION = "US"
 LOCAL_TMP_DIR = "/tmp/airflow_sales_data"
 

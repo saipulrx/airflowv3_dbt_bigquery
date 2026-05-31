@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="gender", model=get_where_subquery(ref('stg_customer')), values=["M","F","MALE","FEMALE","OTHER"]) }}

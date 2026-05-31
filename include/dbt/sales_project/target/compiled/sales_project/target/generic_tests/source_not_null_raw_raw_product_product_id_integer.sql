@@ -1,0 +1,11 @@
+
+    
+    
+
+
+
+select product_id_integer
+from `dwh-bootcamp-bigquery`.`raw`.`raw_product`
+where product_id_integer is null
+
+

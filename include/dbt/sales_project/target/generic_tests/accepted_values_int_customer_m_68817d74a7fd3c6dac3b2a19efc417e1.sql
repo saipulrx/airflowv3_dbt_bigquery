@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="recency_segment", model=get_where_subquery(ref('int_customer_metrics')), values=["Active","At Risk","Lapsed","Churned","Never Purchased"]) }}

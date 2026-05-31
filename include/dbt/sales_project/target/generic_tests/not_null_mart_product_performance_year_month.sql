@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="year_month", model=get_where_subquery(ref('mart_product_performance'))) }}
